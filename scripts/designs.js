@@ -30,21 +30,24 @@ function makeGrid() {
 }
 
 // TODO: - draw grid (jumps thru loops)
-let gridHeight = 5;
-let gridWidth = 10;
+let gridHeight = 10;
+let gridWidth = 5;
 input_height.value // select height
 input_width.value // select width
 
 // add a background color to <td>
-// add row height and width to pixel_canvas
-let tr = document.createElement("tr");
-for(let h = 0; h < gridHeight; h++ ){  
+// add row and pixel to pixel_canvas
+
+for(let h = 0; h < gridHeight; h++ ){
+  let tr = document.createElement("tr");
   console.log(tr);
-} 
-for(let w = 0; w < gridWidth; w++){
-  td = tr.appendChild(document.createElement("td"));
+
+  for(let w = 0; w < gridWidth; w++){
+    td = tr.appendChild(document.createElement("td"));
+  }
 }
 
+  
 
 
 
