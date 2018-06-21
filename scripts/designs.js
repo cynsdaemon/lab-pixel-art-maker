@@ -2,15 +2,14 @@
 let pixel_canvas = document.getElementById("pixel_canvas");
 let submitButton = document.getElementById("submitButton");
 let sizePicker = document.getElementById("sizePicker");
-let defaultColor = document.getElementById("colorPicker").value;
-  // colorPicker.value = defaultColor;
-
+let colorPicker = document.getElementById("colorPicker");
 
 
   // TODO: add event listeners to the relevant DOM elements
 // user input can be color values and
-
-
+let defaultColor = colorPicker.value; // #000000
+let selectedColor;
+let currentColor;
 
 
 
