@@ -4,14 +4,13 @@ let submitButton = document.getElementById("submitButton");
 let sizePicker = document.getElementById("sizePicker");
 let colorPicker = document.getElementById("colorPicker");
 
-
-  // TODO: add event listeners to the relevant DOM elements
-// user input can be color values and
+// user input can be color values
 let defaultColor = colorPicker.value; // #000000
-let selectedColor;
-let currentColor;
+colorPicker.value; // returns current color
 
 
+// TODO: - 
+// colorPicker.value.addEventListener();
 
 // table sizes can be dynamically set by the user.
 // set the size of the cross stitch canvas** as an N by M grid with the makeGrid() function. 
