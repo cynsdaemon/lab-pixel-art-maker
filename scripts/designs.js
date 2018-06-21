@@ -3,9 +3,11 @@ let pixel_canvas = document.getElementById("pixel_canvas");
 let submitButton = document.getElementById("submitButton");
 let sizePicker = document.getElementById("sizePicker");
 let colorPicker = document.getElementById("colorPicker");
+let input_height = document.getElementById("input_height");
+let input_width = document.getElementById("input_width");
 
 // user input can be color values
-let defaultColor = colorPicker.value; // #000000
+let defaultColor = colorPicker.defaultValue; // #000000
 colorPicker.value; // returns current color
 
 
@@ -22,9 +24,32 @@ function makeGrid() {
   // gridHeight
   // gridWidth
   // for each number up to gridHeight 
-    // add row to table element  
+    // add row <tr> to table element  
     // for each number up to gridWidth
-      // add <tb> to row element
-
+      // add <td> to row element
 }
+
+// TODO: - draw grid (jumps thru loops)
+let gridHeight = 5;
+let gridWidth = 10;
+input_height.value // select height
+input_width.value // select width
+
+// add a background color to <td>
+// add row height and width to pixel_canvas
+let tr = document.createElement("tr");
+for(let h = 0; h < gridHeight; h++ ){  
+  console.log(tr);
+} 
+for(let w = 0; w < gridWidth; w++){
+  td = tr.appendChild(document.createElement("td"));
+}
+
+
+
+
+
+
+
+
 
