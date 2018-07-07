@@ -6,7 +6,7 @@ let pixel_canvas = document.getElementById("pixel_canvas");
 // add fill color to square
 pixel_canvas.addEventListener("click", function(event){ 
   const color = document.querySelector('input[type="color"]').value;
-    if(event.target.tagName === "TD") {
+    if(event.target.tagName === "TD"){
       event.target.style.background = color;
     }     
 }, false);
@@ -18,17 +18,15 @@ button.addEventListener("click", function(event){
   // pull in user defined height and width,
   let height = input_height.value;
   let width = input_width.value;
-    // remove old grid
-    pixel_canvas.querySelectorAll("tr").forEach(function(tr){ pixel_canvas.removeChild(tr);
-
-  });
+  // remove old grid
+  removeGrid();
   // then make new grid
   makeGrid(height, width);
     
 }, false);
 
 // makeGrid 
-function makeGrid(height, width) {  
+function makeGrid(height, width){  
   for(let h = 0; h < height; h++ ){
     let row = document.createElement("tr");
     pixel_canvas.appendChild(row);
@@ -41,5 +39,10 @@ function makeGrid(height, width) {
   }  
 }
 
+// removeGrid
+function removeGrid(){
+  pixel_canvas.querySelectorAll("tr").forEach(function(tr){ pixel_canvas.removeChild(tr);
 
+  });
+}
 
